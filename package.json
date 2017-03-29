@@ -1,0 +1,47 @@
+{
+  "name": "file-sharing-test",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+	"postinstall": "npm run bundle",
+    "clean": "gulp clean",
+	"styles": "gulp styles",
+    "bundle": "gulp bundle --profile=dev",
+    "start": "concurrently \"gulp watch --profile=dev\" \"lite-server\""
+  },
+  "dependencies": {
+    "@angular/common": "^2.2.0",
+    "@angular/compiler": "^2.2.0",
+    "@angular/core": "^2.2.0",
+    "@angular/forms": "^2.2.0",
+    "@angular/http": "^2.2.0",
+    "@angular/material": "2.0.0-beta.1",
+    "@angular/platform-browser": "^2.2.0",
+    "@angular/platform-browser-dynamic": "^2.2.0",
+    "@angular/router": "^3.2.0",
+    "angular2-jwt": "0.1.22",
+    "angular2-oauth2": "1.3.10",
+    "core-js": "2.4.1",
+    "hammerjs": "^2.0.8",
+    "js-common": "git+ssh://git@bitbucket.org/irule/js-common.git#v0.13.8",
+    "reflect-metadata": "0.1.9",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.23"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "jasmine-core": "^2.4.1",
+    "lite-server": "^2.2.0",
+    "phantomjs-prebuilt": "^2.1.12",
+    "plugin-typescript": "^5.2.7",
+    "systemjs": "0.19.39",
+    "systemjs-builder": "0.15.31",
+    "typescript": "^2.0.2",
+    "yargs": "^4.8.1"
+  }
+}

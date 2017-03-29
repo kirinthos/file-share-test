@@ -1,0 +1,9 @@
+
+*.js
+*.js.map
+*.css
+
+src/app-config.ts
+
+node_modules/
+dist/
